@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spotify-Web Player: Music for Everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img width="110" class="invert" src="img/hmusic.svg" alt="">
+                </div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg"">Home</li>
+                    <li><img class=" invert" src="img/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <h3>
+                        Your Library
+                    </h3>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/Privacy"><span>Privacy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/cookies-policy"><span>cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy-policy"><span>privacy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey p-1 ">
+            <div class="header ">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Login</button>
+
+                </div>
+            </div>
+            <div class="spotifyplaylist">
+                <h1>Music PlayList</h1>
+            </div>
+
+            <div class="cardcontainer">
+                <div data-folder="cs" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card1.jpg" alt="">
+                    <h2>Treading Songs</h2>
+                    <p>Hottest track from your favourite</p>
+                </div>
+
+
+                <div data-folder="ncs" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card2.jpeg" alt="">
+                    <h2>Bollywood hits</h2>
+                    <p>Hits to boost your nood and fill you sre happiness</p>
+                </div>
+
+
+                <div data-folder="Tollywood" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card3.jpeg" alt="">
+                    <h2>Tollywood Pearls</h2>
+                    <p>The finest of set of Telugu Music </p>
+                </div>
+
+
+                <div data-folder="Bhojpuri" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card4.jpeg" alt="">
+                    <h2>Bhojpuri Hits</h2>
+                    <p>Biggest Bhojpuri hits from the last 10 Years</p>
+                </div>
+
+
+                <div data-folder="Odia" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card5.jpeg" alt="">
+                    <h2>Odia Songs </h2>
+                    <p>Finest collection of the odia Music</p>
+                </div>
+
+                <div data-folder="Bengali" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card6.jpeg" alt="">
+                    <h2>Bengali Songs</h2>
+                    <p>Bnegali song you are Beauty happiness</p>
+                </div>
+
+                <div data-folder="Bhakti" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card7.jpeg" alt="">
+                    <h2>Bhakti Songs </h2>
+                    <p>Finest collection of the Old Music</p>
+                </div>
+
+                <div data-folder="Old" class="card ">
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="black"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg>
+                    </div>
+                    <img src="img/card8.jpg" alt="">
+                    <h2>Old 90s Songs </h2>
+                    <p>This playlist are the all bollywood old songs</p>
+                </div>
+               
+
+             </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="invert" class="songbutton">
+                            <img width="40" class="invert" id="previous" src="img/previous.svg" alt="">
+                            <img width="40" class="invert" id="play" src="img/play.svg" alt="">
+                            <img width="40" class="invert" id="next" src="img/next.svg" alt="">
+                        </div>
+                        <div>
+                            <div class="songtime">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> 
